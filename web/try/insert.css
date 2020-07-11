@@ -1,0 +1,100 @@
+.insert_all input{
+    border:1px solid gainsboro;
+    border-radius: 5px;
+    color: lightgrey;
+    font-size: 15px;
+}
+.img_start{
+    width: 10px;
+    height: 10px;
+}
+.insert_all{
+    position: relative;
+    top:20px;
+    width: 100%;
+    height: 500px;
+    background-color: gainsboro;
+}
+.insert_title{
+    position: relative;
+    top:2%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+.insert_titleword{
+    position: relative;
+    top:30%;
+    left: 2%;
+}
+.insert_content{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+}
+.change1{
+    position: relative;
+    top:5%;
+    left: 9.1%;
+    width: 90%;
+    height: 15%;
+}
+#name{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    left:1%;
+}
+#mark{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    left: 1%;
+}
+.change2{
+    position: relative;
+    top:10%;
+    left: 5.5%;
+    width: 90%;
+    height: 15%;
+}
+#model_title{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    left: 1%;
+}
+#link{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    left: 1%;
+}
+.change3{
+    position: relative;
+    left: 9.1%;
+    width: 90%;
+    height: 15%;
+    top:15%;
+}
+#tip{
+    position: relative;
+    width: 87%;
+    height: 100%;
+    left:1%;
+}
+
+.change4{
+    position: relative;
+    top:20%;
+    left: 5%;
+    width: 90%;
+    height: 15%;
+}
+#insert_submit{
+    position: relative;
+    left: 9%;
+    width: 10%;
+    height: 100%;
+}

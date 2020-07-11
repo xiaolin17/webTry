@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div
+        {
+            width:150px;
+            height:150px;
+            background:#FF0000;
+            position:relative;
+            animation:myfirst 10ms;
+            -webkit-animation:myfirst 10ms; /* Safari and Chrome */
+            animation-duration:10ms;
+            animation-timing-function:linear;
+            animation-delay:0s;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+            animation-play-state:running;
+			
+			
+            /* Safari and Chrome: */
+            -webkit-animation-name:myfirst;
+            -webkit-animation-duration:10ms;
+            -webkit-animation-timing-function:linear;
+            -webkit-animation-delay:0s;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate;
+            -webkit-animation-play-state:running;
+        }
+
+        @keyframes myfirst
+        {
+            0%   {background:#FF0000; left:0px; top:0px;}
+            25%  {background:#FF3300; left:1519px; top:0px;}
+            50%  {background:#FF6600; left:1519px; top:650px;}
+            75%  {background:#FF9900; left:0px; top:650px;}
+            100% {background:#FFCC00; left:0px; top:0px;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+
+</body>
+</html>

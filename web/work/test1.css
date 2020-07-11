@@ -1,0 +1,55 @@
+.box{
+    margin: 0 auto;
+    height: 640px;
+    width: 420px;
+    text-align: center;
+}
+
+.header{
+    color: white;
+    height: 100px;
+    width: 410px;
+    background-color: black;
+    float: left;
+    border: 5px solid white;
+}
+.main1{
+    color: white;
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    float: left;
+    border: 5px solid white;
+}
+.sidebar1{
+    color: white;
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    float: left;
+    border: 5px solid white;
+}
+.sidebar2{
+    color: white;
+    height: 200px;
+    width: 160px;
+    background-color: black;
+    float: left;
+    border: 5px solid white;
+}
+.main2{
+    color: white;
+    height: 200px;
+    width: 240px;
+    background-color: black;
+    float: left;
+    border: 5px solid white;
+}
+.footer{
+    color: white;
+    height: 100px;
+    width: 410px;
+    background-color: black;
+    float: left;
+    border: 5px solid white;
+}

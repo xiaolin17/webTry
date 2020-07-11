@@ -1,0 +1,36 @@
+*{
+    margin: auto;
+    padding: auto;
+    font-family: Adobe 黑体 Std;
+    font-size: 13px;
+}
+
+.partOne,.partTwo,.partThree{
+    height: 40px;
+    width: 900px;
+    line-height: 40px;
+    background-color: rgba(135, 135, 135, 0.14);
+}
+
+.BasicInformation{
+    margin-top:25px;
+    width:700px ;
+    height: 770px;
+}
+
+.productTrade{
+    margin-top:25px;
+    width:700px ;
+    height: 190px;
+}
+.custom{
+    margin-top:25px;
+    width:700px ;
+    height: 160px;
+}
+.keyWords{
+    margin-left: 70px;
+}
+.customValue{
+    margin-left: -17px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="./formStyle.css" />
+
+    <title>产品基本信息</title>
+</head>
+<body>
+<div>
+    <div class="partOne" style="border-bottom:1px solid gray" ><p ><b style="font-size: 15px " >&emsp;产品基本信息</b></p></div>
+    <div>
+        <form class="BasicInformation">
+            <img src="./imgs/星号.png" width="8" height="8">&nbsp; 产品名称&nbsp;<img src="./imgs/问号-圈.png" width="12" height="12">&nbsp;&nbsp;<input type="text" placeholder="如：PU女士手提包（CK12002)"   style="width:320px" ><br><br><br>
+            &emsp;产品型号&nbsp;<img src="../imgs/问号-圈.png" width="12" height="12">&nbsp;&nbsp;<input type="text" name="type" style="width: 200px"><br><br><br>
+            <img src="./imgs/星号.png" width="8" height="8">&nbsp; 产品图片&nbsp;<img src="./imgs/问号-圈.png" width="12" height="12">&nbsp;&nbsp;
+            <input type="radio" name="sex" value="male" checked>上传单张图片
+            <input type="radio" name="sex" value="female">上传多张图片&emsp;
+            <span style="color:#797171">您已提交10个多图产品，还提交零个。</span> <br><br>
+            <button type="button" onclick="" style="margin-left: 90px">本地上传</button>&nbsp;&nbsp;<button type="button" onclick="">从图片库选取</button><br><br>
+            <p style="color:#797171 ; margin-left: 90px">-最多添加10个多图产品，每个多图产品最多展示6张图片</p>
+            <p style="color:#797171 ; margin-left: 90px">-jpg或jpeg格式；不超过300k</p><br>
+            &emsp;<img src="./imgs/星号.png" width="8" height="8">&nbsp;关键词&nbsp;<img src="./imgs/问号-圈.png" width="12" height="12">&nbsp;&nbsp;
+            <input type="text" name="type" style="width: 200px">&nbsp;&nbsp;<span style="color:#1473d1">关键词建议</span><br><br>
+            <div class="keyWords">
+                &emsp;&nbsp;<img src="./imgs/加号.png" width="12" height="12">&nbsp;&nbsp;<span style="color:#1473d1">添加更多关键词</span><br>
+               <p style="color:#797171"> &emsp; &nbsp;-请在每个文本框中输入一个用于描述您产品的关键词，并控制在48个字符以内。</p><br>
+            </div>
+
+            &emsp;<img src="./imgs/星号.png" width="8" height="8">&nbsp; 产品类别&nbsp;&nbsp;&nbsp;<button type="button" onclick="">选择目录</button>
+            <span>找不到目录吗？</span><span style="color:#1473d1">点这里。</span><br><br><br>
+            &emsp;&emsp;&nbsp;&nbsp; 产品分组&nbsp; <select style="width: 175px;color:#797171"><option >请选择产品组</option></select><br><br><br>
+            <img src="./imgs/星号.png" width="8" height="8">&nbsp; 产品描述&nbsp;<img src="./imgs/问号-圈.png" width="12" height="12">&nbsp;&nbsp;
+            <input type="radio" name="sex" value="male" checked>富文本
+            <input type="radio" name="sex" value="female">纯文本&nbsp;&nbsp;
+            <span style="color:#797171">您已提交了23个富文本产品，还可以提交97。</span><br><br>
+
+            <div class="txtbox">
+                <textarea name="content" style="width:680px;height:280px;" id="content"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="partTwo"  style="border-bottom:1px solid gray">
+        <b style="font-size: 15px ">&emsp;产品贸易&nbsp;</b><img src="./imgs/问号-圈.png" width="12" height="12">&nbsp;&nbsp;
+        <span style="color:#797171">详细填写你的报价，让其更容易被买家关注</span><span  style="float: right"> <input type="checkbox">可洽谈&emsp;</span><br><br><br>
+    </div>
+
+    <div>
+        <form class="productTrade">
+            <img src="./imgs/星号.png" width="8" height="8">&nbsp;<span >最小订单量&nbsp;&nbsp;</span><input type="text" style="width: 100px">
+            <select style="width: 100px"><option value = "个">个</option></select>&nbsp;&nbsp;
+            <img src="./imgs/星号.png" width="8" height="8">&nbsp;<span >FOB价格(USD)&nbsp;</span><input type="text" style="width: 100px">
+            <select style="width: 100px"><option value = "个">个</option></select><br><br>
+            <div class="keyWords">
+                &emsp;<img src="./imgs/加号.png" width="12" height="12">&nbsp;&nbsp;<span style="color:#1473d1">添加价格区间</span><br><br><br>
+            </div>
+           &emsp;&emsp;&emsp;&emsp;港口&nbsp;&nbsp;<input type="text" style="width: 320px"><br><br><br>
+            <img src="./imgs/星号.png" width="8" height="8">&nbsp;支付方式 &emsp;&nbsp;<input type="checkbox" name="vehicle" value="Bike">L/C&emsp;<input type="checkbox" name="vehicle" value="Car">T/T
+            &emsp; <input type="checkbox" name="vehicle" value="Bike">D/P&emsp;<input type="checkbox" name="vehicle" value="Car">Paypal
+            &emsp; <input type="checkbox" name="vehicle" value="Bike">MoneyGram&emsp;<input type="checkbox" name="vehicle" value="Car">Westen&nbsp;Union
+            &emsp; <input type="checkbox" name="vehicle" value="Bike">Others
+        </form>
+    </div>
+
+    <div class="partThree" style="border-bottom:1px solid gray">
+            <b style="font-size: 15px ">&emsp;展示字段自定义</b>&nbsp;<img src="./imgs/问号-圈.png" width="12" height="12">&emsp;&emsp;<span style="color:#797171">可以从产品属性、自定义属性、产品条件选择2个自定义信息用于展示厅产品介绍页面的优先展示。</span><br><br>
+        </div>
+    <div>
+        <form class="custom">
+            &emsp;&emsp;交易条件&nbsp;<input type="checkbox" name="vehicle" value="Bike">港口&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">支付方式<br><br><br>
+            &emsp;&emsp;产品属性&nbsp;<input type="checkbox" name="vehicle" value="Bike">外观&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">应用
+            &emsp;&emsp;<input type="checkbox" name="vehicle" value="Bike">成分&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">目标市场<br><br><br>
+            <div class="customValue">
+                &emsp;&emsp;自定义属性&nbsp;   <input type="checkbox" name="vehicle" value="Bike">FOB&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">CFR
+                &emsp;&emsp;<input type="checkbox" name="vehicle" value="Bike">CIF&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">DAT
+                &emsp;&emsp;<input type="checkbox" name="vehicle" value="Bike">FAS&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">DDP
+                &emsp;&emsp;<input type="checkbox" name="vehicle" value="Bike">DAP&emsp;&emsp;<input type="checkbox" name="vehicle" value="Car">FOB<br><br>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+<script charset="utf-8" src="./kindeditor/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="./kindeditor/lang/zh-CN.js"></script>
+<script charset="utf-8" src="./kindeditor/plugins/code/prettify.js"></script>
+<script>
+    KindEditor.ready(function(K) {
+        var editor = K.create('textarea[name="content"]');
+    });
+</script>

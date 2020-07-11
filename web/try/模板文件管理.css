@@ -1,0 +1,171 @@
+.all{
+    position: relative;
+    top:20px;
+
+    width: 100%;
+    height: 500px;
+    background-color: gainsboro;
+}
+.title{
+    position: relative;
+    top:2%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+.titleword{
+    position: relative;
+    top:30%;
+    left: 2%;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-color: white;
+}
+.model{
+    position: relative;
+    top:2%;
+    left: 2%;
+    width: 96%;
+    height: 10%;
+    background-color: white;
+}
+.name{
+    position: relative;
+    float: left;
+    width: 12%;
+    height: 100%;
+}
+#selectmodel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.search{
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 100%;
+}
+#searchtext{
+    position: relative;
+    width: 98.5%;
+    height: 90%;
+}
+.searchaction{
+    position: relative;
+    float: left;
+    width: 6%;
+    height: 100%;
+}
+#startseaech{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("search.png");
+    background-position: center;
+    background-size: 40% 50%;
+    background-repeat: no-repeat;
+}
+.insert{
+    position: relative;
+    float: right;
+    width: 10%;
+    height: 100%;
+}
+#insert_word{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tab{
+    position: relative;
+    top:4%;
+    left: 2%;
+    width: 96%;
+    height: 70%;
+    background-color: white;
+}
+.table{
+    position: relative;
+    width: 100%;
+}
+
+.page{
+    position: relative;
+    top:6%;
+    left: 2%;
+    width: 96%;
+    height: 10%;
+}
+.countpage{
+    position: absolute;
+    width: 5%;
+    height: 80%;
+    top:10px;
+    float: left;
+    left: 30%;
+}
+#selectpage{
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    float: left;
+    left: 36%;
+}
+.pagination{
+    position: absolute;
+    height: 80%;
+    float: left;
+    left: 48%;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color:dodgerblue;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+
+}
+.gopage{
+    position: absolute;
+    height: 80%;
+    top:10px;
+    float: left;
+    left: 57%;
+}
+#go{
+    position: relative;
+    width:6%;
+    height: 40%;
+    text-align: center;
+}
+.info_change{
+    color: dodgerblue;
+    background-color: white;
+    border: white;
+}
+.info_delete{
+    color: red;
+    background-color: white;
+    border: white;
+}

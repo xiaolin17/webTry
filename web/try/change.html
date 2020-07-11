@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+    <link rel="stylesheet" href="change.css" type="text/css"/>
+    <script src="change.js" type="text/javascript"></script>
+    <script>
+        window.onload=function () {
+            var url = window.location.href;
+            var flag = url.split("=");
+            if (flag[1] == 'A') {
+                var arr = url.split("?=A=");
+                var arr1 = arr[1].split(",");
+                var j = 0;
+                var new_arr = [];
+                for (var i = 0; i < 5; i++) {
+                    if (j < arr1.length) {
+                        new_arr[i] = arr1[j];
+                        j++
+                    } else {
+                        new_arr[i] = " ";
+                    }
+                }
+                var new_name = document.getElementById("name");
+                new_name.value = new_arr[0];
+                var new_mark = document.getElementById("mark");
+                new_mark.value = new_arr[1];
+                var new_title = document.getElementById("model_title");
+                new_title.value = new_arr[2];
+                var new_link = document.getElementById("link");
+                new_link.value = new_arr[3];
+                var new_tip = document.getElementById("tip");
+                new_tip.value = new_arr[4];
+            }
+            else{
+                var brr = url.split("?=B=");
+                var brr1 = brr[1].split(",");
+                var bj = 0;
+                var new_brr = [];
+                for (var bi = 0; bi < 5; bi++) {
+                    if (bj < brr1.length) {
+                        new_brr[bi] = brr1[bj];
+                        bj++
+                    } else {
+                        new_brr[bi] = " ";
+                    }
+                }
+                var new_name = document.getElementById("name");
+                new_name.value = new_brr[0];
+                var new_mark = document.getElementById("mark");
+                new_mark.value = new_brr[1];
+                var new_title = document.getElementById("model_title");
+                new_title.value = new_brr[2];
+                var new_link = document.getElementById("link");
+                new_link.value = new_brr[3];
+                var new_tip = document.getElementById("tip");
+                new_tip.value = new_brr[4];
+
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="all" style="border: 1px solid gainsboro">
+        <div class="title" style="border-bottom:12px solid gainsboro">
+            <div class="titleword">
+                <a href="模板文件管理.html" style="text-decoration: none"><font style="font-family: 黑体">模板文件管理列表</font></a>&nbsp;<font style="color: gainsboro">></font>&nbsp;模板文件管理</div>
+        </div>
+        <div class="content">
+            <div class="change1">
+                名称<input type="text" id="name" autocomplete="off" style="color:#000;" placeholder="名称">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img_start" src="xingxing.png" >模板唯一标识<input type="text" style="color:#000;" id="mark"  autocomplete="off" placeholder="模板唯一标识">
+            </div>
+            <div class="change2">
+                <img class="img_start" src="xingxing.png" >模板标题<input type="text" style="color:#000;" id="model_title" autocomplete="off"  placeholder="模板标题">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;链接地址<input type="text" id="link" style="color:#000;" autocomplete="off" placeholder="用于展示">
+            </div>
+            <div class="change3">
+                备注<input type="text" style="color:#000;" id="tip" autocomplete="off" placeholder="备注">
+            </div>
+            <div class="change4">
+                <input type="button" id="change_submit" onclick="change_over()" style="background-color: dodgerblue;color: white" value="提交">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

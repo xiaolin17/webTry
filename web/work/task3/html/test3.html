@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>表单验证</title>
+    <link rel="stylesheet" type="text/css" href="../css/test3.css" />
+    <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+</head>
+<body>
+<form method="post" action="#">
+    <div class="int">
+        <label for="name">&emsp;用户名：</label>
+        <input type="text" id="name" class="required" />
+    </div>
+    <div class="int">
+        <label for="email">&emsp;&emsp;邮箱：</label>
+        <input type="text" id="email" class="required" />
+    </div>
+    <div class="int">
+        <label for="address">个人资料：</label>
+        <input type="text" id="address" />
+    </div>
+    <div class="int">
+        <span>&emsp;&emsp;</span><input type="submit" value="提交" id="send" style="margin-left: 70px;" />
+        <span>&emsp;&emsp;</span><input type="reset" value="重置" id="res" />
+    </div>
+</form>
+</body>
+<script src="../js/test3.js"></script>
+</html>

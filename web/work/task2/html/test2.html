@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生成绩管理系统</title>
+    <link rel="stylesheet" type="text/css" href="../css/test2.css" />
+    <script src="../js/test2.js"></script>
+</head>
+<body>
+<div class="all">
+    <div class="head">
+        <div class="line1"><hr size="5px" color="#c19d7c" width="450"></div>
+        <div class="title" style="font-size:24px;color:#999999"><span>学生信息管理系统</span></div>
+        <div class="line2"><hr size="5px" color="#c19d7c" width="450"></div>
+    </div><!--头部-->
+    <!--头部按钮-->
+    <div class="button">
+        <button id="add" onclick="display_add()">新增</button>
+        <button id="del" onclick="del()">删除</button>
+    </div>
+    <div class="table">
+        <div id="formhead">
+                <table width="1330" cellspacing="0" id="information">
+                    <a>
+                <tr height="50" style="background-color: #dadee1;font-weight: bold" id="tr">
+                    <td class="td" width="50"><input type="checkbox"  value="select" id="selectAll"
+                                          onclick="selectAll(this)" /></td>
+                    <td class="td">序号</td>
+                    <td class="td">学号</td>
+                    <td class="td">姓名</td>
+                    <td class="td">学院</td>
+                    <td class="td">专业</td>
+                    <td class="td">年级</td>
+                    <td class="td">班级</td>
+                    <td class="td">年龄</td>
+                    <td id="td">操作</td>
+                </tr>
+                    </a>
+            </table>
+        </div>
+    </div>
+    <!--表格-->
+        <div class="footer">
+            <span id="page"></span>
+            <!--底部按钮-->
+            <div class="button1">
+                <button id="previous" onclick="subPage()">上一页</button>
+                <button id="next" onclick="addPage()">下一页</button>
+            </div>
+        </div>
+</div>
+
+<!--增加模态框-->
+<div id="add_modal">
+    <div id="add_modal_total">
+        <div id="add_title">&emsp;新增学生信息</div>
+        <!--需要填入的选项-->
+        <div id="add_content">
+            <div class="add_tr">
+                <h4>学号：</h4>
+                <input type="number" id="add_studentID"/>
+            </div>
+            <div class="add_tr">
+                <h4>姓名：</h4>
+                <input type="text" id="add_name"/>
+            </div>
+            <div class="add_tr">
+                <h4>学院：</h4>
+                <input type="text" id="add_college"/>
+            </div>
+            <div class="add_tr">
+                <h4>专业：</h4>
+                <input type="text" id="add_major"/>
+            </div>
+            <div class="add_tr">
+                <h4>年级：</h4>
+                <input type="number" id="add_grade"/>
+            </div>
+            <div class="add_tr">
+                <h4>班级：</h4>
+                <input type="number" id="add_Class"/>
+            </div>
+            <div class="add_tr">
+                <h4>年龄：</h4>
+                <input type="number" id="add_age"/>
+            </div>
+        </div>
+        <hr>
+        <!--提交与取消两个按钮-->
+        <div id="add_footer">
+            <button id="submit" onclick="add_students()">提交</button>
+                <button id="add_cancel" onclick="close_add()">取消</button>
+        </div>
+    </div>
+</div>
+
+<!--查看模态框-->
+<div id="search_modal">
+    <div id="search_modal_total">
+        <div id="search_title">&emsp;查看学生信息</div>
+        <!--查看展示的信息-->
+        <div id="search_content">
+            <div class="search_tr">
+                <h4>学号：</h4>
+                <input type="number" id="search_studentID" readonly="true"/>
+            </div>
+            <div class="search_tr">
+                <h4>姓名：</h4>
+                <input type="text" id="search_name" readonly="true"/>
+            </div>
+            <div class="search_tr">
+                <h4>学院：</h4>
+                <input type="text" id="search_college" readonly="true"/>
+            </div>
+            <div class="search_tr">
+                <h4>专业：</h4>
+                <input type="text" id="search_major" readonly="true"/>
+            </div>
+            <div class="search_tr">
+                <h4>年级：</h4>
+                <input type="number" id="search_grade" readonly="true"/>
+            </div>
+            <div class="search_tr">
+                <h4>班级：</h4>
+                <input type="number" id="search_Class" readonly="true"/>
+            </div>
+            <div class="search_tr">
+                <h4>年龄：</h4>
+                <input type="number" id="search_age" readonly="true"/>
+            </div>
+        </div>
+        <hr>
+        <!--取消按钮-->
+        <div id="search_footer">
+            <button id="search_cancel" onclick="close_search()">取消</button>
+        </div>
+    </div>
+</div>
+
+<!--修改模态框-->
+<div id="change_modal">
+    <div id="change_modal_total">
+        <div id="change_title">&emsp;修改学生信息</div>
+        <!--查看展示的信息并可进行修改-->
+        <div id="change_content">
+            <div class="change_tr">
+                <h4>学号：</h4>
+                <input type="number" id="change_studentID"/>
+            </div>
+            <div class="change_tr">
+                <h4>姓名：</h4>
+                <input type="text" id="change_name"/>
+            </div>
+            <div class="change_tr">
+                <h4>学院：</h4>
+                <input type="text" id="change_college"/>
+            </div>
+            <div class="change_tr">
+                <h4>专业：</h4>
+                <input type="text" id="change_major"/>
+            </div>
+            <div class="change_tr">
+                <h4>年级：</h4>
+                <input type="number" id="change_grade"/>
+            </div>
+            <div class="change_tr">
+                <h4>班级：</h4>
+                <input type="number" id="change_Class"/>
+            </div>
+            <div class="change_tr">
+                <h4>年龄：</h4>
+                <input type="number" id="change_age"/>
+            </div>
+        </div>
+        <hr>
+        <!--提交与取消两个按钮-->
+        <div id="change_footer">
+            <button id="change_submit" onclick="change_students()">保存</button>
+            <button id="change_cancel" onclick="close_change()">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

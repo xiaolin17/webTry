@@ -1,0 +1,295 @@
+.all{
+    margin: 0px;
+    margin: auto;
+    padding: 10px;
+    background-color: #f0ece9;
+    font-size: 16px;
+    width: 1344px;
+}
+.head{
+    width: 1352px;
+    height: 46px;
+}
+.line1{
+    padding-top: 8px;
+    float: left;
+}
+.line2{
+    padding-top: 8px;
+    padding-right: 8px;
+    float: right;
+}
+.title{
+    float: left;
+    padding-left: 100px;
+}
+.button{
+    color: #ffffff;
+}
+
+/*行hover*/
+.table a:hover{
+    background-color: #5899ce;
+}
+
+/*新增按钮样式*/
+#add{
+    width: 110px;
+    height: 50px;
+    background-color: #5cb85c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*删除按钮样式*/
+#del{
+    width: 110px;
+    height: 50px;
+    background-color: #d9534f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*表格样式*/
+.table {
+    padding-top: 16px;
+    border-collapse:collapse;
+    text-align: center;
+}
+
+/*底部按钮样式*/
+.button1{
+    color: #ffffff;
+    float: right;
+}
+
+/*下一页*/
+#next{
+    width: 110px;
+    height: 50px;
+    background-color: #d9534f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*上一页*/
+#previous {
+    width: 110px;
+    height: 50px;
+    background-color: #5cb85c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*每一行的高度*/
+#information tr{
+    height: 40px;
+}
+
+.footer{
+    height: 100px;
+    line-height: 100px;
+}
+#selectAl{
+    cursor: pointer;
+}
+
+/*增加模态框样式*/
+#add_modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 24px;
+}
+#add_modal_total{
+    background-color: #fefefe;
+    margin-top: 70px;
+    border: 1px solid #888;
+    height: 450px;
+    width: 550px;
+    margin-left: 29%;
+}
+/* 新增模态框的title */
+#add_title{
+    background-color: #555555;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+/* 新增模态框中添加的学生信息 */
+#add_content{
+    margin-top: 16px;
+}
+.add_tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+}
+.add_tr input{
+    width: 256px;
+    height: 24px;
+}
+/* 新增模态框中的提交和取消按钮 */
+#add_footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+/* 新增模态框中的提交按钮 */
+#submit{
+    width: 69px;
+    height: 36px;
+    background-color: #5cb85c;
+    font-size: 18px;
+    margin-right: 12px;
+}
+#submit:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+/* 新增模态框中的取消按钮 */
+#add_cancel{
+    width: 69px;
+    height: 36px;
+    background-color: white;
+    font-size: 18px;
+}
+#add_cancel:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*查看模态框样式*/
+#search_modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 24px;
+}
+#search_modal_total{
+    background-color: #fefefe;
+    margin-top: 70px;
+    border: 1px solid #888;
+    height: 450px;
+    width: 550px;
+    margin-left: 29%;
+}
+
+/* 查看模态框的title */
+#search_title{
+    background-color: #555555;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+#search_content{
+    margin-top: 16px;
+}
+.search_tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+}
+.search_tr input{
+    width: 256px;
+    height: 24px;
+}
+/* 修改模态框中的取消按钮 */
+#search_footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+/* 查看模态框中的取消按钮 */
+#search_cancel{
+    width: 69px;
+    height: 36px;
+    background-color: white;
+    font-size: 18px;
+}
+#search_cancel:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* 修改模态框样式*/
+#change_modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 24px;
+}
+#change_modal_total{
+    background-color: #fefefe;
+    margin-top: 70px;
+    border: 1px solid #888;
+    height: 450px;
+    width: 550px;
+    margin-left: 29%;
+}
+
+/* 修改模态框的title */
+#change_title{
+    background-color: #555555;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+#change_content{
+    margin-top: 16px;
+}
+.change_tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+}
+.change_tr input{
+    width: 256px;
+    height: 24px;
+}
+/* 修改模态框中的提交和取消按钮 */
+#change_footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+/* 修改模态框中的提交按钮 */
+#change_submit{
+    width: 69px;
+    height: 36px;
+    background-color: #5cb85c;
+    font-size: 18px;
+    margin-right: 12px;
+}
+#change_submit:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+/* 修改模态框中的取消按钮 */
+#change_cancel{
+    width: 69px;
+    height: 36px;
+    background-color: white;
+    font-size: 18px;
+}
+#change_cancel:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
